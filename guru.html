@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Guru — SMA Negeri 1 Singaparna</title>
+    <meta name="description"
+        content="Daftar lengkap guru dan tenaga pendidik SMA Negeri 1 Singaparna beserta bidang studi yang diampu." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+</head>
+
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="nav-logo">
+                    <svg viewBox="0 0 26 26" fill="none">
+                        <path d="M13 2L2 8v2h22V8L13 2z" fill="#FFD700" />
+                        <rect x="4" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="11" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="18" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="2" y="20" width="22" height="3" fill="white" opacity="0.9" />
+                    </svg>
+                </div>
+                <div class="nav-school-name">
+                    <div class="name">SMA Negeri 1 Singaparna</div>
+                    <div class="sub">Unggul • Berkarakter • Berprestasi</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="visi-misi.html">Visi & Misi</a>
+                <a href="guru.html" class="active">Guru</a>
+                <a href="berita.html">Berita</a>
+                <a href="kegiatan.html">Kegiatan</a>
+                <a href="kontak.html" class="nav-cta">Kontak</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="profil.html">🏫 Profil Sekolah</a>
+        <a href="visi-misi.html">🎯 Visi & Misi</a>
+        <a href="guru.html">👩‍🏫 Daftar Guru</a>
+        <a href="berita.html">📰 Berita</a>
+        <a href="kegiatan.html">🎭 Kegiatan Siswa</a>
+        <a href="kontak.html">📞 Kontak</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>👩‍🏫 Daftar Guru & Staf</h1>
+            <p>Tenaga pendidik profesional, berpengalaman, dan berdedikasi tinggi untuk kemajuan siswa.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a><span class="sep">›</span>
+                <span class="current">Daftar Guru</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:var(--bg-light);">
+        <div class="container">
+
+            <!-- Stats Bar -->
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:48px;"
+                class="fade-in-up">
+                <div
+                    style="background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;">
+                    <div style="font-size:2rem;font-weight:800;color:var(--primary);" class="stat-number"
+                        data-target="68" data-suffix="">0</div>
+                    <div style="font-size:0.85rem;color:var(--text-secondary);font-weight:600;">Total Guru</div>
+                </div>
+                <div
+                    style="background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;">
+                    <div style="font-size:2rem;font-weight:800;color:var(--accent);" class="stat-number"
+                        data-target="54">0</div>
+                    <div style="font-size:0.85rem;color:var(--text-secondary);font-weight:600;">Guru Tetap (PNS)</div>
+                </div>
+                <div
+                    style="background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;">
+                    <div style="font-size:2rem;font-weight:800;color:#f59e0b;" class="stat-number" data-target="14">0
+                    </div>
+                    <div style="font-size:0.85rem;color:var(--text-secondary);font-weight:600;">Guru Honorer</div>
+                </div>
+                <div
+                    style="background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;">
+                    <div style="font-size:2rem;font-weight:800;color:#8b5cf6;" class="stat-number" data-target="42">0
+                    </div>
+                    <div style="font-size:0.85rem;color:var(--text-secondary);font-weight:600;">Bergelar S2/S3</div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar fade-in-up">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="sains">🔬 MIPA & Sains</button>
+                <button class="filter-btn" data-filter="sosial">📚 IPS & Bahasa</button>
+                <button class="filter-btn" data-filter="agama">🌙 Agama & PKn</button>
+                <button class="filter-btn" data-filter="seni">🎨 Seni & Olahraga</button>
+                <button class="filter-btn" data-filter="teknologi">💻 Teknologi</button>
+                <button class="filter-btn" data-filter="pimpinan">👑 Pimpinan</button>
+            </div>
+
+            <!-- Teachers Grid -->
+            <div class="teachers-page-grid">
+
+                <!-- PIMPINAN -->
+                <div class="teacher-card-full fade-in-up stagger-1" data-category="pimpinan">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#0047AB,#1a6de0);">
+                        <span style="font-size:5rem;">👩‍💼</span>
+                        <div
+                            style="position:absolute;bottom:10px;left:10px;background:var(--secondary);color:var(--text-primary);font-size:0.7rem;font-weight:800;padding:3px 10px;border-radius:99px;">
+                            Kepala Sekolah</div>
+                    </div>
+                    <div class="t-info">
+                        <h4>Dra. Hj. Siti Rohmah, M.Pd.</h4>
+                        <div class="t-subject">Kepala Sekolah</div>
+                        <p class="t-edu">S2 Manajemen Pendidikan — IKIP Bandung</p>
+                        <p class="t-nip">NIP: 196507121990022001</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-2" data-category="pimpinan">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#003080,#0047AB);">
+                        <span style="font-size:5rem;">👨‍💼</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>H. Dede Sulaeman, M.Pd.</h4>
+                        <div class="t-subject">Wakasek Kurikulum</div>
+                        <p class="t-edu">S2 Teknologi Pendidikan — UPI</p>
+                        <p class="t-nip">NIP: 196712241995011002</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-3" data-category="pimpinan">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#065f46,#10b981);">
+                        <span style="font-size:5rem;">👨‍💼</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Asep Gunawan, S.Pd., M.M.</h4>
+                        <div class="t-subject">Wakasek Kesiswaan</div>
+                        <p class="t-edu">S2 Manajemen Bisnis — UNLA</p>
+                        <p class="t-nip">NIP: 197003151997031004</p>
+                    </div>
+                </div>
+
+                <!-- MIPA -->
+                <div class="teacher-card-full fade-in-up stagger-1" data-category="sains">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#1e40af,#3b82f6);">
+                        <span style="font-size:5rem;">👨‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Drs. Ahmad Fauzi, M.Si.</h4>
+                        <div class="t-subject">Matematika</div>
+                        <p class="t-edu">S2 Matematika — UPI Bandung</p>
+                        <p class="t-nip">NIP: 196804121994031005</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-2" data-category="sains">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#4c1d95,#8b5cf6);">
+                        <span style="font-size:5rem;">👨‍🔬</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Ir. Yusup Ramdani, M.T.</h4>
+                        <div class="t-subject">Fisika</div>
+                        <p class="t-edu">S2 Fisika Terapan — ITB Bandung</p>
+                        <p class="t-nip">NIP: 197102281996031003</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-3" data-category="sains">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#065f46,#34d399);">
+                        <span style="font-size:5rem;">👩‍🔬</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Dra. Neneng Sartika, M.Si.</h4>
+                        <div class="t-subject">Kimia</div>
+                        <p class="t-edu">S2 Kimia — UNPAD Bandung</p>
+                        <p class="t-nip">NIP: 196902141994032003</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-4" data-category="sains">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#7f1d1d,#ef4444);">
+                        <span style="font-size:5rem;">👩‍🔬</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Sri Mulyati, S.Pd., M.Pd.</h4>
+                        <div class="t-subject">Biologi</div>
+                        <p class="t-edu">S2 Pendidikan Biologi — UPI</p>
+                        <p class="t-nip">NIP: 197505112003122002</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-1" data-category="sains">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#1e3a8a,#3b82f6);">
+                        <span style="font-size:5rem;">👨‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Nanang Sutisna, S.Pd.</h4>
+                        <div class="t-subject">Matematika</div>
+                        <p class="t-edu">S1 Pendidikan Matematika — UNSIL</p>
+                        <p class="t-nip">NIP: 198006252005011008</p>
+                    </div>
+                </div>
+
+                <!-- BAHASA & SOSIAL -->
+                <div class="teacher-card-full fade-in-up stagger-2" data-category="sosial">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#92400e,#f59e0b);">
+                        <span style="font-size:5rem;">👩‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Iis Nurjanah, S.Pd., M.Pd.</h4>
+                        <div class="t-subject">Bahasa Indonesia</div>
+                        <p class="t-edu">S2 Pendidikan Bahasa — UPI</p>
+                        <p class="t-nip">NIP: 197308121999032002</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-3" data-category="sosial">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#064e3b,#10b981);">
+                        <span style="font-size:5rem;">👨‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Drs. Wahyu Hermawan, M.Hum.</h4>
+                        <div class="t-subject">Bahasa Inggris</div>
+                        <p class="t-edu">S2 Linguistik — UNPAD</p>
+                        <p class="t-nip">NIP: 196712081995011003</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-4" data-category="sosial">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#1e3a8a,#60a5fa);">
+                        <span style="font-size:5rem;">👩‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Hj. Tuti Rahayu, S.Pd., M.Pd.</h4>
+                        <div class="t-subject">Sejarah</div>
+                        <p class="t-edu">S2 Ilmu Sejarah — UNPAD</p>
+                        <p class="t-nip">NIP: 197009251996022002</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-1" data-category="sosial">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#78350f,#d97706);">
+                        <span style="font-size:5rem;">👨‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Entang Suparman, S.Pd.</h4>
+                        <div class="t-subject">Ekonomi / Akuntansi</div>
+                        <p class="t-edu">S1 Pendidikan Ekonomi — UNSIL</p>
+                        <p class="t-nip">NIP: 197408092001121003</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-2" data-category="sosial">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#312e81,#818cf8);">
+                        <span style="font-size:5rem;">👩‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Rina Fitriani, S.Pd.</h4>
+                        <div class="t-subject">Geografi</div>
+                        <p class="t-edu">S1 Pendidikan Geografi — UPI</p>
+                        <p class="t-nip">NIP: 198103142005012010</p>
+                    </div>
+                </div>
+
+                <!-- AGAMA -->
+                <div class="teacher-card-full fade-in-up stagger-3" data-category="agama">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#14532d,#22c55e);">
+                        <span style="font-size:5rem;">👨‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>KH. Moch. Farid, S.Ag., M.Pd.I.</h4>
+                        <div class="t-subject">Pendidikan Agama Islam</div>
+                        <p class="t-edu">S2 Pendidikan Islam — UIN SGD</p>
+                        <p class="t-nip">NIP: 196806041993031008</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-4" data-category="agama">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#0f172a,#334155);">
+                        <span style="font-size:5rem;">👨‍🏫</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Dede Koswara, S.Pd., M.Pd.</h4>
+                        <div class="t-subject">PKn & P. Pancasila</div>
+                        <p class="t-edu">S2 PKn — UPI Bandung</p>
+                        <p class="t-nip">NIP: 197104121995011002</p>
+                    </div>
+                </div>
+
+                <!-- SENI & OLAHRAGA -->
+                <div class="teacher-card-full fade-in-up stagger-1" data-category="seni">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#7c2d12,#f97316);">
+                        <span style="font-size:5rem;">🎨</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Lilis Suryani, S.Pd.</h4>
+                        <div class="t-subject">Seni Budaya</div>
+                        <p class="t-edu">S1 Seni Rupa — ITB Bandung</p>
+                        <p class="t-nip">NIP: 198204162006042012</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-2" data-category="seni">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#064e3b,#34d399);">
+                        <span style="font-size:5rem;">⚽</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Ujang Permana, S.Pd.</h4>
+                        <div class="t-subject">PJOK</div>
+                        <p class="t-edu">S1 Pendidikan Olahraga — UPI</p>
+                        <p class="t-nip">NIP: 198605252010011014</p>
+                    </div>
+                </div>
+
+                <!-- TIK -->
+                <div class="teacher-card-full fade-in-up stagger-3" data-category="teknologi">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#1e1b4b,#6366f1);">
+                        <span style="font-size:5rem;">💻</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Reza Muhamad, S.Kom., M.T.</h4>
+                        <div class="t-subject">Informatika / TIK</div>
+                        <p class="t-edu">S2 Teknik Informatika — ITB</p>
+                        <p class="t-nip">NIP: 198809152012011007</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card-full fade-in-up stagger-4" data-category="teknologi">
+                    <div class="avatar-area" style="background:linear-gradient(135deg,#0c4a6e,#38bdf8);">
+                        <span style="font-size:5rem;">💻</span>
+                    </div>
+                    <div class="t-info">
+                        <h4>Dewi Anggraeni, S.T.</h4>
+                        <div class="t-subject">Informatika / Coding</div>
+                        <p class="t-edu">S1 Teknik Informatika — UNSIL</p>
+                        <p class="t-nip">NIP: 199201102015032004</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-center fade-in-up" style="margin-top:48px;color:var(--text-secondary);font-size:0.9rem;">
+                Menampilkan 18 dari 68 tenaga pendidik. Untuk informasi lebih lanjut silakan hubungi kantor sekolah.
+            </p>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">🏫 SMA Negeri 1 Singaparna</div>
+                    <div class="brand-sub">Kabupaten Tasikmalaya, Jawa Barat</div>
+                    <p>Mewujudkan generasi cerdas, berakhlak mulia, berprestasi, dan berdaya saing di era global.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">▶️</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigasi</h5>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="guru.html">Daftar Guru</a></li>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="kegiatan.html">Kegiatan</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Informasi</h5>
+                    <ul>
+                        <li><a href="#">PPDB Online</a></li>
+                        <li><a href="#">Kalender Akademik</a></li>
+                        <li><a href="#">Prestasi Sekolah</a></li>
+                        <li><a href="#">Fasilitas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Kontak</h5>
+                    <ul>
+                        <li><a href="#">📍 Singaparna, Tasikmalaya</a></li>
+                        <li><a href="#">📞 (0265) 546001</a></li>
+                        <li><a href="#">✉️ info@sman1singaparna.sch.id</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SMA Negeri 1 Singaparna. Hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top"
+        style="position:fixed;bottom:28px;right:28px;width:48px;height:48px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);cursor:pointer;border:none;z-index:999;opacity:0;pointer-events:none;transition:all 0.3s;">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

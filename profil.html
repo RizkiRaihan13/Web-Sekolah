@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Sekolah — SMA Negeri 1 Singaparna</title>
+    <meta name="description"
+        content="Profil lengkap SMA Negeri 1 Singaparna: sejarah, identitas sekolah, fasilitas, dan pencapaian." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="nav-logo">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L2 8v2h22V8L13 2z" fill="#FFD700" />
+                        <rect x="4" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="11" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="18" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="2" y="20" width="22" height="3" fill="white" opacity="0.9" />
+                    </svg>
+                </div>
+                <div class="nav-school-name">
+                    <div class="name">SMA Negeri 1 Singaparna</div>
+                    <div class="sub">Unggul • Berkarakter • Berprestasi</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="profil.html" class="active">Profil</a>
+                <a href="visi-misi.html">Visi & Misi</a>
+                <a href="guru.html">Guru</a>
+                <a href="berita.html">Berita</a>
+                <a href="kegiatan.html">Kegiatan</a>
+                <a href="kontak.html" class="nav-cta">Kontak</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="profil.html">🏫 Profil Sekolah</a>
+        <a href="visi-misi.html">🎯 Visi & Misi</a>
+        <a href="guru.html">👩‍🏫 Daftar Guru</a>
+        <a href="berita.html">📰 Berita</a>
+        <a href="kegiatan.html">🎭 Kegiatan Siswa</a>
+        <a href="kontak.html">📞 Kontak</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>🏫 Profil Sekolah</h1>
+            <p>Mengenal lebih dalam SMA Negeri 1 Singaparna — sejarah, identitas, dan pencapaian kami.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a>
+                <span class="sep">›</span>
+                <span class="current">Profil Sekolah</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="section-padding" style="background:var(--bg-light);">
+        <div class="container">
+            <div class="profile-main">
+
+                <!-- SIDEBAR -->
+                <div class="profile-sidebar">
+                    <div class="profile-card fade-in-up">
+                        <div class="profile-emblem">🏛️</div>
+                        <h3>SMA Negeri 1 Singaparna</h3>
+                        <p class="npsn">NPSN: 20225678</p>
+                        <div class="profile-stats">
+                            <div class="p-stat">
+                                <div class="num" data-target="1200" data-suffix="+">0</div>
+                                <div class="lbl">Siswa</div>
+                            </div>
+                            <div class="p-stat">
+                                <div class="num" data-target="68">0</div>
+                                <div class="lbl">Guru</div>
+                            </div>
+                            <div class="p-stat">
+                                <div class="num" data-target="33">0</div>
+                                <div class="lbl">Rombel</div>
+                            </div>
+                            <div class="p-stat">
+                                <div class="num" data-target="45">0</div>
+                                <div class="lbl">Tahun</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accreditation-badge fade-in-up stagger-2">
+                        <div class="grade">A</div>
+                        <p>✅ Terakreditasi A</p>
+                        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:4px;">BAN-S/M Tahun 2024</p>
+                    </div>
+
+                    <div style="background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;margin-top:16px;"
+                        class="fade-in-up stagger-3">
+                        <h5 style="font-weight:800;color:var(--primary);margin-bottom:14px;">📑 Dokumen Sekolah</h5>
+                        <div style="display:flex;flex-direction:column;gap:10px;">
+                            <a href="#"
+                                style="display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--bg-light);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:600;color:var(--text-primary);transition:all 0.3s;"
+                                onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+                                onmouseout="this.style.background='var(--bg-light)';this.style.color='var(--text-primary)'">
+                                📄 Profil Sekolah (PDF)
+                            </a>
+                            <a href="#"
+                                style="display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--bg-light);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:600;color:var(--text-primary);transition:all 0.3s;"
+                                onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+                                onmouseout="this.style.background='var(--bg-light)';this.style.color='var(--text-primary)'">
+                                📋 Kalender Akademik
+                            </a>
+                            <a href="#"
+                                style="display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--bg-light);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:600;color:var(--text-primary);transition:all 0.3s;"
+                                onmouseover="this.style.background='var(--primary)';this.style.color='#fff'"
+                                onmouseout="this.style.background='var(--bg-light)';this.style.color='var(--text-primary)'">
+                                🏆 Daftar Prestasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN CONTENT -->
+                <div>
+                    <!-- Sejarah -->
+                    <div class="profile-section fade-in-up">
+                        <h2><span class="icon">📖</span> Sejarah Singkat</h2>
+                        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:16px;">
+                            SMA Negeri 1 Singaparna didirikan pada tahun <strong>1979</strong> oleh Pemerintah Kabupaten
+                            Tasikmalaya sebagai respons terhadap kebutuhan mendesak akan lembaga pendidikan tingkat
+                            menengah atas di wilayah Singaparna dan sekitarnya.
+                        </p>
+                        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:16px;">
+                            Pada awal berdirinya, sekolah ini hanya memiliki <strong>3 rombongan belajar</strong> dengan
+                            jumlah siswa tidak lebih dari 120 orang. Namun, berkat kepercayaan masyarakat dan kerja
+                            keras seluruh civitas academica, SMAN 1 Singaparna berkembang pesat menjadi salah satu
+                            sekolah unggulan di Kabupaten Tasikmalaya.
+                        </p>
+                        <p style="color:var(--text-secondary);line-height:1.8;">
+                            Kini, setelah lebih dari <strong>45 tahun</strong> berdiri, SMAN 1 Singaparna telah
+                            meluluskan ribuan alumni yang tersebar di berbagai bidang profesi, baik di tingkat nasional
+                            maupun internasional. Sekolah ini terus berkomitmen untuk menghadirkan pendidikan
+                            berkualitas yang relevan dengan perkembangan zaman.
+                        </p>
+                    </div>
+
+                    <!-- Identitas Sekolah -->
+                    <div class="profile-section fade-in-up stagger-1">
+                        <h2><span class="icon">🪪</span> Identitas Sekolah</h2>
+                        <table class="info-table">
+                            <tr>
+                                <td>Nama Sekolah</td>
+                                <td>:</td>
+                                <td><strong>SMA Negeri 1 Singaparna</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>:</td>
+                                <td>Negeri</td>
+                            </tr>
+                            <tr>
+                                <td>NPSN</td>
+                                <td>:</td>
+                                <td>20225678</td>
+                            </tr>
+                            <tr>
+                                <td>NSS</td>
+                                <td>:</td>
+                                <td>301021819001</td>
+                            </tr>
+                            <tr>
+                                <td>Akreditasi</td>
+                                <td>:</td>
+                                <td><strong style="color:var(--primary);">A (Sangat Baik) — 2024</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Tahun Berdiri</td>
+                                <td>:</td>
+                                <td>1979</td>
+                            </tr>
+                            <tr>
+                                <td>Kurikulum</td>
+                                <td>:</td>
+                                <td>Kurikulum Merdeka</td>
+                            </tr>
+                            <tr>
+                                <td>Kepala Sekolah</td>
+                                <td>:</td>
+                                <td>Dra. Hj. Siti Rohmah, M.Pd.</td>
+                            </tr>
+                            <tr>
+                                <td>Komite Sekolah</td>
+                                <td>:</td>
+                                <td>H. Asep Rahmat, S.H.</td>
+                            </tr>
+                            <tr>
+                                <td>Alamat</td>
+                                <td>:</td>
+                                <td>Jl. Perintis Kemerdekaan No. 1, Singaparna</td>
+                            </tr>
+                            <tr>
+                                <td>Kecamatan</td>
+                                <td>:</td>
+                                <td>Singaparna</td>
+                            </tr>
+                            <tr>
+                                <td>Kabupaten</td>
+                                <td>:</td>
+                                <td>Tasikmalaya</td>
+                            </tr>
+                            <tr>
+                                <td>Provinsi</td>
+                                <td>:</td>
+                                <td>Jawa Barat</td>
+                            </tr>
+                            <tr>
+                                <td>Kode Pos</td>
+                                <td>:</td>
+                                <td>46416</td>
+                            </tr>
+                            <tr>
+                                <td>Telepon / Fax</td>
+                                <td>:</td>
+                                <td>(0265) 546001</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td>info@sman1singaparna.sch.id</td>
+                            </tr>
+                            <tr>
+                                <td>Website</td>
+                                <td>:</td>
+                                <td>www.sman1singaparna.sch.id</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Fasilitas -->
+                    <div class="profile-section fade-in-up stagger-2">
+                        <h2><span class="icon">🏗️</span> Fasilitas & Sarana Prasarana</h2>
+                        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;">
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🏛️</span>
+                                <span style="font-size:0.88rem;font-weight:600;">33 Ruang Kelas</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🔬</span>
+                                <span style="font-size:0.88rem;font-weight:600;">3 Lab. IPA (Fisika, Kimia, Bio)</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">💻</span>
+                                <span style="font-size:0.88rem;font-weight:600;">2 Lab. Komputer (80 unit)</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">📚</span>
+                                <span style="font-size:0.88rem;font-weight:600;">Perpustakaan Digital</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🎭</span>
+                                <span style="font-size:0.88rem;font-weight:600;">Aula Serbaguna 1.000 kursi</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">⚽</span>
+                                <span style="font-size:0.88rem;font-weight:600;">Lapangan Olahraga</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🕌</span>
+                                <span style="font-size:0.88rem;font-weight:600;">Masjid Al-Ilmu</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🏥</span>
+                                <span style="font-size:0.88rem;font-weight:600;">Klinik Kesehatan Sekolah</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🍽️</span>
+                                <span style="font-size:0.88rem;font-weight:600;">Kantin Sehat</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🌐</span>
+                                <span style="font-size:0.88rem;font-weight:600;">WiFi 1 Gbps (seluruh area)</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">🚌</span>
+                                <span style="font-size:0.88rem;font-weight:600;">Area Parkir Luas</span>
+                            </div>
+                            <div
+                                style="display:flex;align-items:center;gap:10px;padding:14px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <span style="font-size:1.4rem;">📸</span>
+                                <span style="font-size:0.88rem;font-weight:600;">CCTV 24 Jam</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prestasi -->
+                    <div class="profile-section fade-in-up stagger-3">
+                        <h2><span class="icon">🏆</span> Prestasi Unggulan</h2>
+                        <div style="display:flex;flex-direction:column;gap:14px;">
+                            <div
+                                style="display:flex;gap:16px;align-items:flex-start;padding:16px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-white);">
+                                <span style="font-size:1.6rem;flex-shrink:0;">🥇</span>
+                                <div><strong style="font-size:0.95rem;">Juara 1 Olimpiade Sains Nasional (OSN) Bidang
+                                        Kimia</strong>
+                                    <p style="font-size:0.82rem;color:var(--text-secondary);">Tingkat Provinsi Jawa
+                                        Barat — 2024</p>
+                                </div>
+                            </div>
+                            <div
+                                style="display:flex;gap:16px;align-items:flex-start;padding:16px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-white);">
+                                <span style="font-size:1.6rem;flex-shrink:0;">🥈</span>
+                                <div><strong style="font-size:0.95rem;">Juara 2 Lomba Karya Ilmiah Remaja
+                                        (LKIR)</strong>
+                                    <p style="font-size:0.82rem;color:var(--text-secondary);">Tingkat Provinsi Jawa
+                                        Barat — 2025</p>
+                                </div>
+                            </div>
+                            <div
+                                style="display:flex;gap:16px;align-items:flex-start;padding:16px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-white);">
+                                <span style="font-size:1.6rem;flex-shrink:0;">🏅</span>
+                                <div><strong style="font-size:0.95rem;">Penghargaan Sekolah Adiwiyata Mandiri</strong>
+                                    <p style="font-size:0.82rem;color:var(--text-secondary);">Kementerian Lingkungan
+                                        Hidup RI — 2024</p>
+                                </div>
+                            </div>
+                            <div
+                                style="display:flex;gap:16px;align-items:flex-start;padding:16px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-white);">
+                                <span style="font-size:1.6rem;flex-shrink:0;">⚽</span>
+                                <div><strong style="font-size:0.95rem;">Juara 1 Turnamen Futsal Pelajar</strong>
+                                    <p style="font-size:0.82rem;color:var(--text-secondary);">Tingkat Kabupaten
+                                        Tasikmalaya — 2025</p>
+                                </div>
+                            </div>
+                            <div
+                                style="display:flex;gap:16px;align-items:flex-start;padding:16px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-white);">
+                                <span style="font-size:1.6rem;flex-shrink:0;">🎭</span>
+                                <div><strong style="font-size:0.95rem;">Juara 1 Festival Seni Budaya Jawa Barat</strong>
+                                    <p style="font-size:0.82rem;color:var(--text-secondary);">Bidang Tari Sunda Tingkat
+                                        Provinsi — 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">🏫 SMA Negeri 1 Singaparna</div>
+                    <div class="brand-sub">Kabupaten Tasikmalaya, Jawa Barat</div>
+                    <p>Mewujudkan generasi cerdas, berakhlak mulia, berprestasi, dan berdaya saing di era global.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">▶️</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigasi</h5>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="guru.html">Daftar Guru</a></li>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="kegiatan.html">Kegiatan</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Informasi</h5>
+                    <ul>
+                        <li><a href="#">PPDB Online</a></li>
+                        <li><a href="#">Kalender Akademik</a></li>
+                        <li><a href="#">Prestasi Sekolah</a></li>
+                        <li><a href="#">Fasilitas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Kontak</h5>
+                    <ul>
+                        <li><a href="#">📍 Singaparna, Tasikmalaya</a></li>
+                        <li><a href="#">📞 (0265) 546001</a></li>
+                        <li><a href="#">✉️ info@sman1singaparna.sch.id</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SMA Negeri 1 Singaparna. Hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top"
+        style="position:fixed;bottom:28px;right:28px;width:48px;height:48px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);cursor:pointer;border:none;z-index:999;opacity:0;pointer-events:none;transition:all 0.3s;">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

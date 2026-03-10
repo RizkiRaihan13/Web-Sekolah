@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita Sekolah — SMA Negeri 1 Singaparna</title>
+    <meta name="description" content="Berita, pengumuman, dan informasi terkini dari SMA Negeri 1 Singaparna." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+</head>
+
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="nav-logo">
+                    <svg viewBox="0 0 26 26" fill="none">
+                        <path d="M13 2L2 8v2h22V8L13 2z" fill="#FFD700" />
+                        <rect x="4" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="11" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="18" y="10" width="4" height="10" fill="white" opacity="0.9" />
+                        <rect x="2" y="20" width="22" height="3" fill="white" opacity="0.9" />
+                    </svg>
+                </div>
+                <div class="nav-school-name">
+                    <div class="name">SMA Negeri 1 Singaparna</div>
+                    <div class="sub">Unggul • Berkarakter • Berprestasi</div>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="visi-misi.html">Visi & Misi</a>
+                <a href="guru.html">Guru</a>
+                <a href="berita.html" class="active">Berita</a>
+                <a href="kegiatan.html">Kegiatan</a>
+                <a href="kontak.html" class="nav-cta">Kontak</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="profil.html">🏫 Profil Sekolah</a>
+        <a href="visi-misi.html">🎯 Visi & Misi</a>
+        <a href="guru.html">👩‍🏫 Daftar Guru</a>
+        <a href="berita.html">📰 Berita</a>
+        <a href="kegiatan.html">🎭 Kegiatan Siswa</a>
+        <a href="kontak.html">📞 Kontak</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>📰 Berita & Pengumuman</h1>
+            <p>Informasi terkini seputar kegiatan, prestasi, dan pengumuman penting SMAN 1 Singaparna.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a><span class="sep">›</span>
+                <span class="current">Berita</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:var(--bg-light);">
+        <div class="container">
+            <div class="news-page-grid">
+
+                <!-- ARTICLES -->
+                <div class="news-articles">
+
+                    <a href="#" class="news-article-card fade-in-up">
+                        <div class="news-article-img blue">🏆</div>
+                        <div class="news-article-body">
+                            <span class="news-cat">Prestasi</span>
+                            <h3>Tim KIR SMAN 1 Singaparna Raih Juara 2 Lomba Karya Ilmiah Remaja Tingkat Provinsi Jawa
+                                Barat</h3>
+                            <p>Kelompok Ilmiah Remaja (KIR) SMAN 1 Singaparna berhasil meraih juara 2 dalam Lomba Karya
+                                Ilmiah Remaja (LKIR) tingkat Provinsi Jawa Barat yang diselenggarakan di Bandung.
+                                Penelitian mereka berjudul "Pemanfaatan Limbah Kulit Singkong sebagai Bahan Alternatif
+                                Plastik Biodegradable".</p>
+                            <div class="news-meta">
+                                <span>📅 28 Feb 2025</span>
+                                <span>👤 Humas</span>
+                                <span>👁️ 1.2k</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-article-card fade-in-up stagger-1">
+                        <div class="news-article-img green">📚</div>
+                        <div class="news-article-body">
+                            <span class="news-cat green">Akademik</span>
+                            <h3>Peluncuran Program Beasiswa Unggulan Bagi Siswa Berprestasi Tahun 2025</h3>
+                            <p>SMAN 1 Singaparna resmi meluncurkan program beasiswa bagi siswa berprestasi yang
+                                membutuhkan dukungan finansial. Program ini merupakan hasil kerjasama dengan Yayasan
+                                Pendidikan Tasikmalaya dan didukung oleh alumni-alumni terbaik sekolah.</p>
+                            <div class="news-meta">
+                                <span>📅 10 Mar 2025</span>
+                                <span>👤 Kesiswaan</span>
+                                <span>👁️ 876</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-article-card fade-in-up stagger-2">
+                        <div class="news-article-img" style="background:linear-gradient(135deg,#7c2d12,#ea580c);">🎨
+                        </div>
+                        <div class="news-article-body">
+                            <span class="news-cat yellow">Seni & Budaya</span>
+                            <h3>Pentas Seni "Singaparna Berbudaya" Memukau Ratusan Penonton dan Keluarga Siswa</h3>
+                            <p>Pagelaran seni tahunan SMAN 1 Singaparna kembali digelar dengan tema "Singaparna
+                                Berbudaya". Acara yang berlangsung di aula sekolah ini menampilkan beragam pertunjukan
+                                mulai dari tari tradisional, musik, teater, hingga fashion show busana daerah.</p>
+                            <div class="news-meta">
+                                <span>📅 5 Mar 2025</span>
+                                <span>👤 Seni Budaya</span>
+                                <span>👁️ 654</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-article-card fade-in-up stagger-3">
+                        <div class="news-article-img" style="background:linear-gradient(135deg,#064e3b,#34d399);">⚽
+                        </div>
+                        <div class="news-article-body">
+                            <span class="news-cat" style="background:var(--accent);">Olahraga</span>
+                            <h3>Tim Futsal Juara 1 Turnamen Pelajar Tingkat Kabupaten Tasikmalaya 2025</h3>
+                            <p>Tim futsal SMAN 1 Singaparna berhasil menjuarai turnamen futsal pelajar tingkat Kabupaten
+                                Tasikmalaya 2025. Dalam laga final yang berlangsung sengit, tim asuhan Coach Ujang
+                                Permana berhasil mengalahkan SMAN 2 Tasikmalaya dengan skor 3-1.</p>
+                            <div class="news-meta">
+                                <span>📅 1 Mar 2025</span>
+                                <span>👤 OSIS</span>
+                                <span>👁️ 1.5k</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-article-card fade-in-up">
+                        <div class="news-article-img" style="background:linear-gradient(135deg,#14532d,#22c55e);">🌱
+                        </div>
+                        <div class="news-article-body">
+                            <span class="news-cat" style="background:var(--accent);">Lingkungan</span>
+                            <h3>SMAN 1 Singaparna Raih Penghargaan Sekolah Adiwiyata Mandiri dari Kementerian LH</h3>
+                            <p>Sebuah pencapaian luar biasa diraih oleh SMAN 1 Singaparna. Sekolah ini berhasil meraih
+                                predikat Sekolah Adiwiyata Mandiri dari Kementerian Lingkungan Hidup RI atas komitmennya
+                                dalam pengelolaan lingkungan sekolah yang berkelanjutan.</p>
+                            <div class="news-meta">
+                                <span>📅 20 Feb 2025</span>
+                                <span>👤 Humas</span>
+                                <span>👁️ 890</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-article-card fade-in-up stagger-1">
+                        <div class="news-article-img purple">🎓</div>
+                        <div class="news-article-body">
+                            <span class="news-cat">Akademik</span>
+                            <h3>95% Lulusan SMAN 1 Singaparna 2024 Diterima di Perguruan Tinggi Negeri Terkemuka</h3>
+                            <p>Tahun 2024 menjadi tahun membanggakan bagi SMAN 1 Singaparna. Sebanyak 95% dari total
+                                lulusan tahun akademik 2023/2024 berhasil diterima di berbagai perguruan tinggi negeri
+                                bergengsi, termasuk ITB, UI, UNPAD, dan UGM.</p>
+                            <div class="news-meta">
+                                <span>📅 15 Feb 2025</span>
+                                <span>📅 Kurikulum</span>
+                                <span>👁️ 2.1k</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="news-sidebar">
+                    <div class="sidebar-widget fade-in-up">
+                        <h4>📢 Pengumuman Terbaru</h4>
+                        <div style="display:flex;flex-direction:column;gap:2px;">
+                            <div
+                                style="padding:12px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border-radius:var(--radius-sm);margin-bottom:8px;border-left:3px solid #f59e0b;">
+                                <p style="font-size:0.83rem;font-weight:700;margin-bottom:4px;">PPDB 2025/2026</p>
+                                <p style="font-size:0.78rem;color:var(--text-secondary);">Dibuka: 1–30 Juni 2025</p>
+                            </div>
+                            <div
+                                style="padding:12px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:var(--radius-sm);margin-bottom:8px;border-left:3px solid var(--primary);">
+                                <p style="font-size:0.83rem;font-weight:700;margin-bottom:4px;">Ujian Akhir Semester
+                                    Genap</p>
+                                <p style="font-size:0.78rem;color:var(--text-secondary);">5–17 Juni 2025</p>
+                            </div>
+                            <div
+                                style="padding:12px;background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-radius:var(--radius-sm);border-left:3px solid var(--accent);">
+                                <p style="font-size:0.83rem;font-weight:700;margin-bottom:4px;">Penerimaan Rapor</p>
+                                <p style="font-size:0.78rem;color:var(--text-secondary);">Jumat, 21 Juni 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget fade-in-up stagger-1">
+                        <h4>📂 Kategori Berita</h4>
+                        <div class="cat-list">
+                            <a href="#" class="cat-item">🏆 Prestasi <span class="cat-count">12</span></a>
+                            <a href="#" class="cat-item">📚 Akademik <span class="cat-count">8</span></a>
+                            <a href="#" class="cat-item">🎨 Seni & Budaya <span class="cat-count">6</span></a>
+                            <a href="#" class="cat-item">⚽ Olahraga <span class="cat-count">9</span></a>
+                            <a href="#" class="cat-item">🌱 Lingkungan <span class="cat-count">4</span></a>
+                            <a href="#" class="cat-item">📢 Pengumuman <span class="cat-count">15</span></a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget fade-in-up stagger-2">
+                        <h4>🕐 Berita Terpopuler</h4>
+                        <a href="#" class="recent-post">
+                            <div class="rp-img">🎓</div>
+                            <div>
+                                <h6>95% Lulusan Diterima PTN 2024</h6><span class="rp-date">👁️ 2.1k views</span>
+                            </div>
+                        </a>
+                        <a href="#" class="recent-post">
+                            <div class="rp-img">⚽</div>
+                            <div>
+                                <h6>Futsal Juara 1 Kabupaten</h6><span class="rp-date">👁️ 1.5k views</span>
+                            </div>
+                        </a>
+                        <a href="#" class="recent-post">
+                            <div class="rp-img">🏆</div>
+                            <div>
+                                <h6>Tim KIR Juara 2 Provinsi</h6><span class="rp-date">👁️ 1.2k views</span>
+                            </div>
+                        </a>
+                        <a href="#" class="recent-post">
+                            <div class="rp-img">🌱</div>
+                            <div>
+                                <h6>Penghargaan Adiwiyata Mandiri</h6><span class="rp-date">👁️ 890 views</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sidebar-widget fade-in-up stagger-3">
+                        <h4>📅 Kalender Kegiatan</h4>
+                        <div style="display:flex;flex-direction:column;gap:8px;">
+                            <div
+                                style="display:flex;gap:10px;align-items:center;padding:10px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <div
+                                    style="min-width:40px;text-align:center;background:var(--primary);color:#fff;border-radius:var(--radius-sm);padding:4px 0;">
+                                    <div style="font-size:1.1rem;font-weight:800;">15</div>
+                                    <div style="font-size:0.65rem;">Mar</div>
+                                </div>
+                                <p style="font-size:0.82rem;font-weight:600;">HUT Sekolah ke-46</p>
+                            </div>
+                            <div
+                                style="display:flex;gap:10px;align-items:center;padding:10px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <div
+                                    style="min-width:40px;text-align:center;background:var(--accent);color:#fff;border-radius:var(--radius-sm);padding:4px 0;">
+                                    <div style="font-size:1.1rem;font-weight:800;">5</div>
+                                    <div style="font-size:0.65rem;">Jun</div>
+                                </div>
+                                <p style="font-size:0.82rem;font-weight:600;">Ujian Akhir Semester</p>
+                            </div>
+                            <div
+                                style="display:flex;gap:10px;align-items:center;padding:10px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <div
+                                    style="min-width:40px;text-align:center;background:#f59e0b;color:#fff;border-radius:var(--radius-sm);padding:4px 0;">
+                                    <div style="font-size:1.1rem;font-weight:800;">1</div>
+                                    <div style="font-size:0.65rem;">Jul</div>
+                                </div>
+                                <p style="font-size:0.82rem;font-weight:600;">Tahun Ajaran Baru 2025/2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">🏫 SMA Negeri 1 Singaparna</div>
+                    <div class="brand-sub">Kabupaten Tasikmalaya, Jawa Barat</div>
+                    <p>Mewujudkan generasi cerdas, berakhlak mulia, berprestasi, dan berdaya saing di era global.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📷</a><a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">▶️</a><a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigasi</h5>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="guru.html">Daftar Guru</a></li>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="kegiatan.html">Kegiatan</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Informasi</h5>
+                    <ul>
+                        <li><a href="#">PPDB Online</a></li>
+                        <li><a href="#">Kalender Akademik</a></li>
+                        <li><a href="#">Prestasi Sekolah</a></li>
+                        <li><a href="#">Fasilitas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Kontak</h5>
+                    <ul>
+                        <li><a href="#">📍 Singaparna, Tasikmalaya</a></li>
+                        <li><a href="#">📞 (0265) 546001</a></li>
+                        <li><a href="#">✉️ info@sman1singaparna.sch.id</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SMA Negeri 1 Singaparna. Hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top"
+        style="position:fixed;bottom:28px;right:28px;width:48px;height:48px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);cursor:pointer;border:none;z-index:999;opacity:0;pointer-events:none;transition:all 0.3s;">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
