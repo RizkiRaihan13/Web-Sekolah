@@ -1,646 +1,682 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SMA Negeri 1 Singaparna — Website Resmi</title>
-  <meta name="description" content="Website resmi SMA Negeri 1 Singaparna. Informasi profil sekolah, visi misi, daftar guru, berita, dan kegiatan siswa." />
+  <meta name="description"
+    content="Website resmi SMA Negeri 1 Singaparna. Informasi profil sekolah, visi misi, daftar guru, berita, dan kegiatan siswa." />
   <meta name="keywords" content="SMA 1 Singaparna, SMAN 1 Singaparna, sekolah menengah atas, Tasikmalaya" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
 </head>
+
 <body>
 
-<!-- =================== NAVBAR =================== -->
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-brand">
-      <div class="nav-logo">
-        <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L2 8v2h22V8L13 2z" fill="#FFD700"/>
-          <rect x="4" y="10" width="4" height="10" fill="white" opacity="0.9"/>
-          <rect x="11" y="10" width="4" height="10" fill="white" opacity="0.9"/>
-          <rect x="18" y="10" width="4" height="10" fill="white" opacity="0.9"/>
-          <rect x="2" y="20" width="22" height="3" fill="white" opacity="0.9"/>
-        </svg>
-      </div>
-      <div class="nav-school-name">
-        <div class="name">SMA Negeri 1 Singaparna</div>
-        <div class="sub">Unggul • Berkarakter • Berprestasi</div>
-      </div>
-    </a>
+  <!-- =================== NAVBAR =================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">
+          <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L2 8v2h22V8L13 2z" fill="#FFD700" />
+            <rect x="4" y="10" width="4" height="10" fill="white" opacity="0.9" />
+            <rect x="11" y="10" width="4" height="10" fill="white" opacity="0.9" />
+            <rect x="18" y="10" width="4" height="10" fill="white" opacity="0.9" />
+            <rect x="2" y="20" width="22" height="3" fill="white" opacity="0.9" />
+          </svg>
+        </div>
+        <div class="nav-school-name">
+          <div class="name">SMA Negeri 1 Singaparna</div>
+          <div class="sub">Unggul • Berkarakter • Berprestasi</div>
+        </div>
+      </a>
 
-    <div class="nav-links">
-      <a href="index.html" class="active">Beranda</a>
-      <a href="profil.html">Profil</a>
-      <a href="visi-misi.html">Visi & Misi</a>
-      <a href="guru.html">Guru</a>
-      <a href="berita.html">Berita</a>
-      <a href="kegiatan.html">Kegiatan</a>
-      <a href="kontak.html" class="nav-cta">Kontak</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="visi-misi.html">Visi & Misi</a>
+        <a href="guru.html">Guru</a>
+        <a href="berita.html">Berita</a>
+        <a href="kegiatan.html">Kegiatan</a>
+        <a href="kontak.html" class="nav-cta">Kontak</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+  <!-- Mobile Menu -->
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="index.html"><i data-lucide="house" class="my-class"></i>Beranda</a>
+    <a href="profil.html"><i data-lucide="school" class="my-class"></i>Profil Sekolah</a>
+    <a href="visi-misi.html"><i data-lucide="target" class="my-class"></i> Visi & Misi</a>
+    <a href="guru.html"><i data-lucide="file-user" class="my-class"></i>Daftar Guru</a>
+    <a href="berita.html"><i data-lucide="newspaper" class="my-class"></i>Berita</a>
+    <a href="kegiatan.html"><i data-lucide="calendar" class="my-class"></i>Kegiatan Siswa</a>
+    <a href="kontak.html"><i data-lucide="phone" class="my-class"></i>Kontak</a>
+  </nav>
 
-<!-- Mobile Menu -->
-<nav class="nav-mobile" id="nav-mobile">
-  <a href="index.html">🏠 Beranda</a>
-  <a href="profil.html">🏫 Profil Sekolah</a>
-  <a href="visi-misi.html">🎯 Visi & Misi</a>
-  <a href="guru.html">👩‍🏫 Daftar Guru</a>
-  <a href="berita.html">📰 Berita</a>
-  <a href="kegiatan.html">🎭 Kegiatan Siswa</a>
-  <a href="kontak.html">📞 Kontak</a>
-</nav>
+  <!-- =================== HERO =================== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
 
-<!-- =================== HERO =================== -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-bg-img"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-particles"></div>
-
-  <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-badge">🎓 Terakreditasi A — Tahun 2024</div>
-      <h1 class="hero-title">
-        Selamat Datang di<br />
-        <span>SMA Negeri 1</span><br />
-        Singaparna
-      </h1>
-      <p class="hero-desc">
-        Mewujudkan insan cerdas, berkarakter, dan berdaya saing global melalui pendidikan berkualitas di jantung Kabupaten Tasikmalaya.
-      </p>
-      <div class="hero-buttons">
-        <a href="profil.html" class="btn-primary">
-          🏫 Jelajahi Sekolah
-        </a>
-        <a href="berita.html" class="btn-outline-white">
-          📰 Berita Terbaru
-        </a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat-card">
-          <div class="stat-number" data-target="1200" data-suffix="+">0</div>
-          <div class="stat-label">Siswa Aktif</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-target="68" data-suffix="+">0</div>
-          <div class="stat-label">Tenaga Pendidik</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number" data-target="45">0</div>
-          <div class="stat-label">Tahun Berdiri</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="school-card">
-        <div class="school-emblem">🏛️</div>
-        <h2>SMA Negeri 1 Singaparna</h2>
-        <p class="school-tagline">Kabupaten Tasikmalaya, Jawa Barat</p>
-
-        <div class="quick-info">
-          <div class="info-row">
-            <span class="icon">📍</span>
-            <div>
-              <span class="label">Alamat</span>
-              <span class="value">Jl. Perintis Kemerdekaan, Singaparna</span>
-            </div>
-          </div>
-          <div class="info-row">
-            <span class="icon">📞</span>
-            <div>
-              <span class="label">Telepon</span>
-              <span class="value">(0265) 546001</span>
-            </div>
-          </div>
-          <div class="info-row">
-            <span class="icon">🕒</span>
-            <div>
-              <span class="label">Jam Belajar</span>
-              <span class="value">Senin–Jumat, 07.00–15.30</span>
-            </div>
-          </div>
-          <div class="info-row">
-            <span class="icon">🏅</span>
-            <div>
-              <span class="label">Akreditasi</span>
-              <span class="value">A (Sangat Baik)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="scroll-indicator">
-    <div class="wheel"><div class="dot"></div></div>
-    <span>Scroll</span>
-  </div>
-</section>
-
-<!-- =================== NEWS TICKER =================== -->
-<div class="news-ticker">
-  <div class="ticker-inner">
-    <div class="ticker-label">📢 Pengumuman</div>
-    <div class="ticker-track">
-      <div class="ticker-content">
-        <span>Pendaftaran PPDB Tahun Ajaran 2025/2026 dibuka mulai 1 Juni 2025</span>
-        <span>Selamat kepada tim KIR SMAN 1 Singaparna yang meraih Juara 2 Tingkat Provinsi</span>
-        <span>Libur Nasional Hari Raya Idul Fitri 1446 H: 28–30 April 2025</span>
-        <span>Penerimaan Rapor Semester Genap pada Jumat, 21 Juni 2025</span>
-        <span>Lomba Olahraga HUT Sekolah ke-45 — Daftar sekarang!</span>
-        <span>Pendaftaran PPDB Tahun Ajaran 2025/2026 dibuka mulai 1 Juni 2025</span>
-        <span>Selamat kepada tim KIR SMAN 1 Singaparna yang meraih Juara 2 Tingkat Provinsi</span>
-        <span>Libur Nasional Hari Raya Idul Fitri 1446 H: 28–30 April 2025</span>
-        <span>Penerimaan Rapor Semester Genap pada Jumat, 21 Juni 2025</span>
-        <span>Lomba Olahraga HUT Sekolah ke-45 — Daftar sekarang!</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- =================== QUICK MENU =================== -->
-<section class="quick-menu">
-  <div class="container">
-    <div class="quick-grid">
-      <a href="profil.html" class="quick-item fade-in-up stagger-1">
-        <div class="quick-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">🏫</div>
-        <span class="q-label">Profil Sekolah</span>
-      </a>
-      <a href="visi-misi.html" class="quick-item fade-in-up stagger-2">
-        <div class="quick-icon" style="background:linear-gradient(135deg,#fef9c3,#fde68a);">🎯</div>
-        <span class="q-label">Visi & Misi</span>
-      </a>
-      <a href="guru.html" class="quick-item fade-in-up stagger-3">
-        <div class="quick-icon" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">👩‍🏫</div>
-        <span class="q-label">Daftar Guru</span>
-      </a>
-      <a href="berita.html" class="quick-item fade-in-up stagger-4">
-        <div class="quick-icon" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">📰</div>
-        <span class="q-label">Berita Sekolah</span>
-      </a>
-      <a href="kegiatan.html" class="quick-item fade-in-up stagger-1">
-        <div class="quick-icon" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);">🎭</div>
-        <span class="q-label">Kegiatan Siswa</span>
-      </a>
-      <a href="kontak.html" class="quick-item fade-in-up stagger-2">
-        <div class="quick-icon" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">📞</div>
-        <span class="q-label">Kontak Kami</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- =================== ABOUT =================== -->
-<section class="about-section section-padding">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-visual fade-in-up">
-        <div class="about-img-wrapper">
-          <img src="images/hero.png" alt="Gedung SMA Negeri 1 Singaparna" />
-        </div>
-        <div class="about-badge">
-          <div class="badge-num" data-target="1979">0</div>
-          <div class="badge-text">Tahun Berdiri</div>
-        </div>
-      </div>
-
-      <div class="about-text fade-in-up stagger-2">
-        <span class="section-tag">Tentang Kami</span>
-        <h2 class="section-title">Sekolah Unggulan di <span class="gradient-text">Singaparna</span></h2>
-        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:24px;">
-          SMA Negeri 1 Singaparna berdiri sejak tahun 1979 sebagai salah satu sekolah menengah atas terbaik di Kabupaten Tasikmalaya. Dengan akreditasi A, kami berkomitmen menghadirkan pendidikan berkualitas yang mempersiapkan generasi penerus bangsa.
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">🎓 Terakreditasi A — Tahun 2024</div>
+        <h1 class="hero-title">
+          Selamat Datang di<br />
+          <span>SMA Negeri 1</span><br />
+          Singaparna
+        </h1>
+        <p class="hero-desc">
+          Mewujudkan insan cerdas, berkarakter, dan berdaya saing global melalui pendidikan berkualitas di jantung
+          Kabupaten Tasikmalaya.
         </p>
+        <div class="hero-buttons">
+          <a href="profil.html" class="btn-primary">
+            🏫 Jelajahi Sekolah
+          </a>
+          <a href="berita.html" class="btn-outline-white">
+            📰 Berita Terbaru
+          </a>
+        </div>
 
-        <div class="feature-list">
-          <div class="feature-item fade-in-up stagger-1">
-            <div class="feature-icon">🎓</div>
-            <div>
-              <h4>Kurikulum Merdeka Belajar</h4>
-              <p>Menerapkan Kurikulum Merdeka dengan pendekatan pembelajaran yang kreatif dan berpusat pada siswa.</p>
-            </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number" data-target="1200" data-suffix="+">0</div>
+            <div class="stat-label">Siswa Aktif</div>
           </div>
-          <div class="feature-item fade-in-up stagger-2">
-            <div class="feature-icon">🔬</div>
-            <div>
-              <h4>Fasilitas Modern & Lengkap</h4>
-              <p>Laboratorium IPA, laboratorium komputer, perpustakaan digital, dan aula serbaguna yang representatif.</p>
-            </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="68" data-suffix="+">0</div>
+            <div class="stat-label">Tenaga Pendidik</div>
           </div>
-          <div class="feature-item fade-in-up stagger-3">
-            <div class="feature-icon">🏆</div>
-            <div>
-              <h4>Prestasi Akademik & Non-Akademik</h4>
-              <p>Ratusan prestasi dari tingkat kabupaten hingga nasional di bidang sains, olahraga, dan seni.</p>
+          <div class="stat-card">
+            <div class="stat-number" data-target="45">0</div>
+            <div class="stat-label">Tahun Berdiri</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="school-card">
+          <div class="school-emblem">🏛️</div>
+          <h2>SMA Negeri 1 Singaparna</h2>
+          <p class="school-tagline">Kabupaten Tasikmalaya, Jawa Barat</p>
+
+          <div class="quick-info">
+            <div class="info-row">
+              <span class="icon">📍</span>
+              <div>
+                <span class="label">Alamat</span>
+                <span class="value">Jl. Perintis Kemerdekaan, Singaparna</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="icon">📞</span>
+              <div>
+                <span class="label">Telepon</span>
+                <span class="value">(0265) 546001</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="icon">🕒</span>
+              <div>
+                <span class="label">Jam Belajar</span>
+                <span class="value">Senin–Jumat, 07.00–15.30</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="icon">🏅</span>
+              <div>
+                <span class="label">Akreditasi</span>
+                <span class="value">A (Sangat Baik)</span>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <a href="profil.html" class="read-more-btn fade-in-up stagger-4">
-          Selengkapnya →
-        </a>
+    <div class="scroll-indicator">
+      <div class="wheel">
+        <div class="dot"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- =================== NEWS TICKER =================== -->
+  <div class="news-ticker">
+    <div class="ticker-inner">
+      <div class="ticker-label">📢 Pengumuman</div>
+      <div class="ticker-track">
+        <div class="ticker-content">
+          <span>Pendaftaran PPDB Tahun Ajaran 2025/2026 dibuka mulai 1 Juni 2025</span>
+          <span>Selamat kepada tim KIR SMAN 1 Singaparna yang meraih Juara 2 Tingkat Provinsi</span>
+          <span>Libur Nasional Hari Raya Idul Fitri 1446 H: 28–30 April 2025</span>
+          <span>Penerimaan Rapor Semester Genap pada Jumat, 21 Juni 2025</span>
+          <span>Lomba Olahraga HUT Sekolah ke-45 — Daftar sekarang!</span>
+          <span>Pendaftaran PPDB Tahun Ajaran 2025/2026 dibuka mulai 1 Juni 2025</span>
+          <span>Selamat kepada tim KIR SMAN 1 Singaparna yang meraih Juara 2 Tingkat Provinsi</span>
+          <span>Libur Nasional Hari Raya Idul Fitri 1446 H: 28–30 April 2025</span>
+          <span>Penerimaan Rapor Semester Genap pada Jumat, 21 Juni 2025</span>
+          <span>Lomba Olahraga HUT Sekolah ke-45 — Daftar sekarang!</span>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- =================== VISI MISI =================== -->
-<section class="visi-misi-section section-padding">
-  <div class="container">
-    <div class="visi-misi-content">
-      <span class="section-tag">Arah & Tujuan</span>
-      <h2 class="section-title">Visi & Misi Sekolah</h2>
+  <!-- =================== QUICK MENU =================== -->
+  <section class="quick-menu">
+    <div class="container">
+      <div class="quick-grid">
+        <a href="profil.html" class="quick-item fade-in-up stagger-1">
+          <div class="quick-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">🏫</div>
+          <span class="q-label">Profil Sekolah</span>
+        </a>
+        <a href="visi-misi.html" class="quick-item fade-in-up stagger-2">
+          <div class="quick-icon" style="background:linear-gradient(135deg,#fef9c3,#fde68a);">🎯</div>
+          <span class="q-label">Visi & Misi</span>
+        </a>
+        <a href="guru.html" class="quick-item fade-in-up stagger-3">
+          <div class="quick-icon" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">👩‍🏫</div>
+          <span class="q-label">Daftar Guru</span>
+        </a>
+        <a href="berita.html" class="quick-item fade-in-up stagger-4">
+          <div class="quick-icon" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">📰</div>
+          <span class="q-label">Berita Sekolah</span>
+        </a>
+        <a href="kegiatan.html" class="quick-item fade-in-up stagger-1">
+          <div class="quick-icon" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);">🎭</div>
+          <span class="q-label">Kegiatan Siswa</span>
+        </a>
+        <a href="kontak.html" class="quick-item fade-in-up stagger-2">
+          <div class="quick-icon" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">📞</div>
+          <span class="q-label">Kontak Kami</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <div class="vm-grid">
-        <!-- Visi -->
-        <div class="vm-box fade-in-up stagger-1">
-          <div class="vm-icon">🌟</div>
-          <h3>Visi</h3>
-          <p>
-            "Menjadi sekolah unggulan yang mencetak generasi berakhlak mulia, berprestasi, kreatif, dan berwawasan global berlandaskan iman dan takwa."
+  <!-- =================== ABOUT =================== -->
+  <section class="about-section section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual fade-in-up">
+          <div class="about-img-wrapper">
+            <img src="images/hero.png" alt="Gedung SMA Negeri 1 Singaparna" />
+          </div>
+          <div class="about-badge">
+            <div class="badge-num" data-target="1979">0</div>
+            <div class="badge-text">Tahun Berdiri</div>
+          </div>
+        </div>
+
+        <div class="about-text fade-in-up stagger-2">
+          <span class="section-tag">Tentang Kami</span>
+          <h2 class="section-title">Sekolah Unggulan di <span class="gradient-text">Singaparna</span></h2>
+          <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:24px;">
+            SMA Negeri 1 Singaparna berdiri sejak tahun 1979 sebagai salah satu sekolah menengah atas terbaik di
+            Kabupaten Tasikmalaya. Dengan akreditasi A, kami berkomitmen menghadirkan pendidikan berkualitas yang
+            mempersiapkan generasi penerus bangsa.
           </p>
-        </div>
 
-        <!-- Misi -->
-        <div class="vm-box fade-in-up stagger-2">
-          <div class="vm-icon">🎯</div>
-          <h3>Misi</h3>
-          <div class="misi-list">
-            <div class="misi-item">
-              <div class="misi-check">✓</div>
-              <span>Menyelenggarakan pembelajaran inovatif berbasis kompetensi dan karakter.</span>
+          <div class="feature-list">
+            <div class="feature-item fade-in-up stagger-1">
+              <div class="feature-icon">🎓</div>
+              <div>
+                <h4>Kurikulum Merdeka Belajar</h4>
+                <p>Menerapkan Kurikulum Merdeka dengan pendekatan pembelajaran yang kreatif dan berpusat pada siswa.</p>
+              </div>
             </div>
-            <div class="misi-item">
-              <div class="misi-check">✓</div>
-              <span>Mengembangkan potensi akademik dan non-akademik seluruh peserta didik.</span>
+            <div class="feature-item fade-in-up stagger-2">
+              <div class="feature-icon">🔬</div>
+              <div>
+                <h4>Fasilitas Modern & Lengkap</h4>
+                <p>Laboratorium IPA, laboratorium komputer, perpustakaan digital, dan aula serbaguna yang representatif.
+                </p>
+              </div>
             </div>
-            <div class="misi-item">
-              <div class="misi-check">✓</div>
-              <span>Menanamkan nilai-nilai keislaman, kebangsaan, dan budaya lokal.</span>
-            </div>
-            <div class="misi-item">
-              <div class="misi-check">✓</div>
-              <span>Meningkatkan kualitas pendidik dan tenaga kependidikan secara berkelanjutan.</span>
-            </div>
-            <div class="misi-item">
-              <div class="misi-check">✓</div>
-              <span>Membangun lingkungan sekolah yang bersih, aman, dan kondusif.</span>
+            <div class="feature-item fade-in-up stagger-3">
+              <div class="feature-icon">🏆</div>
+              <div>
+                <h4>Prestasi Akademik & Non-Akademik</h4>
+                <p>Ratusan prestasi dari tingkat kabupaten hingga nasional di bidang sains, olahraga, dan seni.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <a href="visi-misi.html" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,215,0,0.2);border:1px solid rgba(255,215,0,0.4);color:var(--secondary);font-weight:700;padding:12px 28px;border-radius:999px;margin-top:36px;transition:all 0.3s;">
-        Baca Selengkapnya →
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- =================== TEACHERS PREVIEW =================== -->
-<section class="teachers-section section-padding">
-  <div class="container">
-    <div class="text-center fade-in-up">
-      <span class="section-tag">Tenaga Pendidik</span>
-      <h2 class="section-title">Guru & Staf <span class="gradient-text">Terbaik Kami</span></h2>
-      <p class="section-subtitle">Didukung oleh pendidik berpengalaman dan berdedikasi tinggi untuk menghasilkan lulusan berkualitas.</p>
-    </div>
-
-    <div class="teachers-grid">
-      <div class="teacher-card fade-in-up stagger-1">
-        <div class="teacher-avatar"><div class="teacher-avatar-inner">👩‍💼</div></div>
-        <div class="teacher-info">
-          <h4>Dra. Hj. Siti Rohmah, M.Pd.</h4>
-          <div class="teacher-subject">Kepala Sekolah</div>
-          <p>S2 Manajemen Pendidikan<br/>IKIP Bandung</p>
-        </div>
-      </div>
-
-      <div class="teacher-card fade-in-up stagger-2">
-        <div class="teacher-avatar"><div class="teacher-avatar-inner">👨‍🏫</div></div>
-        <div class="teacher-info">
-          <h4>Drs. Ahmad Fauzi, M.Si.</h4>
-          <div class="teacher-subject">Matematika</div>
-          <p>S2 Matematika<br/>UPI Bandung</p>
-        </div>
-      </div>
-
-      <div class="teacher-card fade-in-up stagger-3">
-        <div class="teacher-avatar"><div class="teacher-avatar-inner">👩‍🏫</div></div>
-        <div class="teacher-info">
-          <h4>Iis Nurjanah, S.Pd., M.Pd.</h4>
-          <div class="teacher-subject">Bahasa Indonesia</div>
-          <p>S2 Pendidikan Bahasa<br/>UPI Bandung</p>
-        </div>
-      </div>
-
-      <div class="teacher-card fade-in-up stagger-4">
-        <div class="teacher-avatar"><div class="teacher-avatar-inner">👨‍🔬</div></div>
-        <div class="teacher-info">
-          <h4>Ir. Yusup Ramdani, M.T.</h4>
-          <div class="teacher-subject">Fisika</div>
-          <p>S2 Fisika Terapan<br/>ITB Bandung</p>
+          <a href="profil.html" class="read-more-btn fade-in-up stagger-4">
+            Selengkapnya →
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="text-center">
-      <a href="guru.html" class="view-all-btn fade-in-up">
-        Lihat Semua Guru →
-      </a>
-    </div>
-  </div>
-</section>
+  <!-- =================== VISI MISI =================== -->
+  <section class="visi-misi-section section-padding">
+    <div class="container">
+      <div class="visi-misi-content">
+        <span class="section-tag">Arah & Tujuan</span>
+        <h2 class="section-title">Visi & Misi Sekolah</h2>
 
-<!-- =================== NEWS =================== -->
-<section class="news-section section-padding">
-  <div class="container">
-    <div class="text-center fade-in-up" style="margin-bottom:48px;">
-      <span class="section-tag">Informasi Terkini</span>
-      <h2 class="section-title">Berita & <span class="gradient-text">Pengumuman</span></h2>
-    </div>
+        <div class="vm-grid">
+          <!-- Visi -->
+          <div class="vm-box fade-in-up stagger-1">
+            <div class="vm-icon">🌟</div>
+            <h3>Visi</h3>
+            <p>
+              "Menjadi sekolah unggulan yang mencetak generasi berakhlak mulia, berprestasi, kreatif, dan berwawasan
+              global berlandaskan iman dan takwa."
+            </p>
+          </div>
 
-    <div class="news-grid">
-      <!-- Featured News -->
-      <a href="berita.html" class="news-featured fade-in-up">
-        <div class="news-featured-img">🏆</div>
-        <div class="news-body">
-          <span class="news-cat">Prestasi</span>
-          <h3 class="news-title">Tim KIR SMAN 1 Singaparna Raih Juara 2 Lomba Karya Ilmiah Remaja Tingkat Provinsi Jawa Barat</h3>
-          <p class="news-excerpt">Kelompok Ilmiah Remaja (KIR) SMAN 1 Singaparna berhasil meraih juara 2 dalam Lomba Karya Ilmiah Remaja (LKIR) tingkat Provinsi Jawa Barat yang diselenggarakan di Bandung, Sabtu (28/2/2025).</p>
-          <div class="news-meta">
-            <span>📅 28 Februari 2025</span>
-            <span>👤 Humas Sekolah</span>
-            <span>👁️ 1.2k views</span>
+          <!-- Misi -->
+          <div class="vm-box fade-in-up stagger-2">
+            <div class="vm-icon">🎯</div>
+            <h3>Misi</h3>
+            <div class="misi-list">
+              <div class="misi-item">
+                <div class="misi-check">✓</div>
+                <span>Menyelenggarakan pembelajaran inovatif berbasis kompetensi dan karakter.</span>
+              </div>
+              <div class="misi-item">
+                <div class="misi-check">✓</div>
+                <span>Mengembangkan potensi akademik dan non-akademik seluruh peserta didik.</span>
+              </div>
+              <div class="misi-item">
+                <div class="misi-check">✓</div>
+                <span>Menanamkan nilai-nilai keislaman, kebangsaan, dan budaya lokal.</span>
+              </div>
+              <div class="misi-item">
+                <div class="misi-check">✓</div>
+                <span>Meningkatkan kualitas pendidik dan tenaga kependidikan secara berkelanjutan.</span>
+              </div>
+              <div class="misi-item">
+                <div class="misi-check">✓</div>
+                <span>Membangun lingkungan sekolah yang bersih, aman, dan kondusif.</span>
+              </div>
+            </div>
           </div>
         </div>
-      </a>
 
-      <!-- News List -->
-      <div class="news-list">
-        <a href="berita.html" class="news-small">
-          <div class="news-small-img">📚</div>
-          <div class="news-small-body">
-            <span class="news-cat" style="font-size:0.7rem;padding:2px 8px;">Akademik</span>
-            <h5>Peluncuran Program Beasiswa Unggulan Bagi Siswa Berprestasi</h5>
-            <span class="date">📅 10 Maret 2025</span>
-          </div>
-        </a>
-
-        <a href="berita.html" class="news-small">
-          <div class="news-small-img">🎨</div>
-          <div class="news-small-body">
-            <span class="news-cat green" style="font-size:0.7rem;padding:2px 8px;color:#fff;">Seni & Budaya</span>
-            <h5>Pentas Seni "Singaparna Berbudaya" Memukau Ratusan Penonton</h5>
-            <span class="date">📅 5 Maret 2025</span>
-          </div>
-        </a>
-
-        <a href="berita.html" class="news-small">
-          <div class="news-small-img">⚽</div>
-          <div class="news-small-body">
-            <span class="news-cat yellow" style="font-size:0.7rem;padding:2px 8px;color:#fff;">Olahraga</span>
-            <h5>Tim Futsal Juara 1 Turnamen Pelajar Tingkat Kabupaten Tasikmalaya</h5>
-            <span class="date">📅 1 Maret 2025</span>
-          </div>
-        </a>
-
-        <a href="berita.html" class="news-small">
-          <div class="news-small-img">🌱</div>
-          <div class="news-small-body">
-            <span class="news-cat" style="font-size:0.7rem;padding:2px 8px;background:var(--accent);color:#fff;">Lingkungan</span>
-            <h5>SMAN 1 Singaparna Sabet Penghargaan Sekolah Adiwiyata Mandiri</h5>
-            <span class="date">📅 20 Februari 2025</span>
-          </div>
+        <a href="visi-misi.html"
+          style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,215,0,0.2);border:1px solid rgba(255,215,0,0.4);color:var(--secondary);font-weight:700;padding:12px 28px;border-radius:999px;margin-top:36px;transition:all 0.3s;">
+          Baca Selengkapnya →
         </a>
       </div>
     </div>
+  </section>
 
-    <div class="text-center" style="margin-top:40px;">
-      <a href="berita.html" class="view-all-btn fade-in-up">Lihat Semua Berita →</a>
-    </div>
-  </div>
-</section>
+  <!-- =================== TEACHERS PREVIEW =================== -->
+  <section class="teachers-section section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up">
+        <span class="section-tag">Tenaga Pendidik</span>
+        <h2 class="section-title">Guru & Staf <span class="gradient-text">Terbaik Kami</span></h2>
+        <p class="section-subtitle">Didukung oleh pendidik berpengalaman dan berdedikasi tinggi untuk menghasilkan
+          lulusan berkualitas.</p>
+      </div>
 
-<!-- =================== ACTIVITIES =================== -->
-<section class="activities-section section-padding">
-  <div class="container">
-    <div class="text-center fade-in-up">
-      <span class="section-tag">Ekstrakurikuler</span>
-      <h2 class="section-title">Kegiatan <span class="gradient-text">Siswa Kami</span></h2>
-      <p class="section-subtitle">Berbagai program kegiatan yang dirancang untuk mengembangkan bakat, minat, dan karakter siswa.</p>
-    </div>
+      <div class="teachers-grid">
+        <div class="teacher-card fade-in-up stagger-1">
+          <div class="teacher-avatar">
+            <div class="teacher-avatar-inner">👩‍💼</div>
+          </div>
+          <div class="teacher-info">
+            <h4>Dra. Hj. Siti Rohmah, M.Pd.</h4>
+            <div class="teacher-subject">Kepala Sekolah</div>
+            <p>S2 Manajemen Pendidikan<br />IKIP Bandung</p>
+          </div>
+        </div>
 
-    <div class="activities-grid">
-      <div class="activity-card fade-in-up stagger-1">
-        <div class="activity-img">🔬</div>
-        <div class="activity-body">
-          <span class="activity-tag">Sains</span>
-          <h4>Kelompok Ilmiah Remaja (KIR)</h4>
-          <p>Wadah riset dan penelitian siswa dengan bimbingan guru-guru kompeten. Sering juara olimpiade sains.</p>
+        <div class="teacher-card fade-in-up stagger-2">
+          <div class="teacher-avatar">
+            <div class="teacher-avatar-inner">👨‍🏫</div>
+          </div>
+          <div class="teacher-info">
+            <h4>Drs. Ahmad Fauzi, M.Si.</h4>
+            <div class="teacher-subject">Matematika</div>
+            <p>S2 Matematika<br />UPI Bandung</p>
+          </div>
+        </div>
+
+        <div class="teacher-card fade-in-up stagger-3">
+          <div class="teacher-avatar">
+            <div class="teacher-avatar-inner">👩‍🏫</div>
+          </div>
+          <div class="teacher-info">
+            <h4>Iis Nurjanah, S.Pd., M.Pd.</h4>
+            <div class="teacher-subject">Bahasa Indonesia</div>
+            <p>S2 Pendidikan Bahasa<br />UPI Bandung</p>
+          </div>
+        </div>
+
+        <div class="teacher-card fade-in-up stagger-4">
+          <div class="teacher-avatar">
+            <div class="teacher-avatar-inner">👨‍🔬</div>
+          </div>
+          <div class="teacher-info">
+            <h4>Ir. Yusup Ramdani, M.T.</h4>
+            <div class="teacher-subject">Fisika</div>
+            <p>S2 Fisika Terapan<br />ITB Bandung</p>
+          </div>
         </div>
       </div>
 
-      <div class="activity-card fade-in-up stagger-2">
-        <div class="activity-img">⚽</div>
-        <div class="activity-body">
-          <span class="activity-tag">Olahraga</span>
-          <h4>Olahraga & Atletik</h4>
-          <p>Fasilitas lapangan lengkap untuk sepak bola, basket, voli, badminton, dan atletik berprestasi.</p>
-        </div>
-      </div>
-
-      <div class="activity-card fade-in-up stagger-3">
-        <div class="activity-img">🎭</div>
-        <div class="activity-body">
-          <span class="activity-tag">Seni</span>
-          <h4>Seni, Drama & Musik</h4>
-          <p>Mengembangkan bakat seni melalui teater, paduan suara, seni rupa, dan band sekolah.</p>
-        </div>
-      </div>
-
-      <div class="activity-card fade-in-up stagger-1">
-        <div class="activity-img">🪖</div>
-        <div class="activity-body">
-          <span class="activity-tag">Kedisiplinan</span>
-          <h4>Pramuka & PASKIBRA</h4>
-          <p>Membentuk karakter disiplin, kepemimpinan, dan rasa cinta tanah air melalui kegiatan lapangan.</p>
-        </div>
-      </div>
-
-      <div class="activity-card fade-in-up stagger-2">
-        <div class="activity-img">💻</div>
-        <div class="activity-body">
-          <span class="activity-tag">Teknologi</span>
-          <h4>Robotik & Coding</h4>
-          <p>Program coding, robotik, dan desain grafis untuk mempersiapkan siswa di era digital.</p>
-        </div>
-      </div>
-
-      <div class="activity-card fade-in-up stagger-3">
-        <div class="activity-img">🕌</div>
-        <div class="activity-body">
-          <span class="activity-tag">Rohani</span>
-          <h4>Rohis & Kegiatan Agama</h4>
-          <p>Menanamkan nilai spiritual, toleransi, dan akhlakul karimah melalui kajian dan kegiatan islami.</p>
-        </div>
+      <div class="text-center">
+        <a href="guru.html" class="view-all-btn fade-in-up">
+          Lihat Semua Guru →
+        </a>
       </div>
     </div>
+  </section>
 
-    <div class="text-center" style="margin-top:40px;">
-      <a href="kegiatan.html" class="view-all-btn fade-in-up">Lihat Semua Kegiatan →</a>
-    </div>
-  </div>
-</section>
+  <!-- =================== NEWS =================== -->
+  <section class="news-section section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up" style="margin-bottom:48px;">
+        <span class="section-tag">Informasi Terkini</span>
+        <h2 class="section-title">Berita & <span class="gradient-text">Pengumuman</span></h2>
+      </div>
 
-<!-- =================== CONTACT PREVIEW =================== -->
-<section class="contact-section section-padding">
-  <div class="container">
-    <div class="text-center fade-in-up" style="margin-bottom:48px;">
-      <span class="section-tag">Hubungi Kami</span>
-      <h2 class="section-title">Ada Pertanyaan? <span class="gradient-text">Kami Siap Membantu</span></h2>
-    </div>
-
-    <div class="contact-grid">
-      <div>
-        <div class="contact-info">
-          <div class="contact-card fade-in-up stagger-1">
-            <div class="contact-card-icon">📍</div>
-            <div>
-              <h4>Alamat Sekolah</h4>
-              <p>Jl. Perintis Kemerdekaan No. 1, Singaparna, Kab. Tasikmalaya, Jawa Barat 46416</p>
+      <div class="news-grid">
+        <!-- Featured News -->
+        <a href="berita.html" class="news-featured fade-in-up">
+          <div class="news-featured-img">🏆</div>
+          <div class="news-body">
+            <span class="news-cat">Prestasi</span>
+            <h3 class="news-title">Tim KIR SMAN 1 Singaparna Raih Juara 2 Lomba Karya Ilmiah Remaja Tingkat Provinsi
+              Jawa Barat</h3>
+            <p class="news-excerpt">Kelompok Ilmiah Remaja (KIR) SMAN 1 Singaparna berhasil meraih juara 2 dalam Lomba
+              Karya Ilmiah Remaja (LKIR) tingkat Provinsi Jawa Barat yang diselenggarakan di Bandung, Sabtu (28/2/2025).
+            </p>
+            <div class="news-meta">
+              <span>📅 28 Februari 2025</span>
+              <span>👤 Humas Sekolah</span>
+              <span>👁️ 1.2k views</span>
             </div>
           </div>
-          <div class="contact-card fade-in-up stagger-2">
-            <div class="contact-card-icon">📞</div>
-            <div>
-              <h4>Telepon / Fax</h4>
-              <p>(0265) 546001</p>
+        </a>
+
+        <!-- News List -->
+        <div class="news-list">
+          <a href="berita.html" class="news-small">
+            <div class="news-small-img">📚</div>
+            <div class="news-small-body">
+              <span class="news-cat" style="font-size:0.7rem;padding:2px 8px;">Akademik</span>
+              <h5>Peluncuran Program Beasiswa Unggulan Bagi Siswa Berprestasi</h5>
+              <span class="date">📅 10 Maret 2025</span>
             </div>
+          </a>
+
+          <a href="berita.html" class="news-small">
+            <div class="news-small-img">🎨</div>
+            <div class="news-small-body">
+              <span class="news-cat green" style="font-size:0.7rem;padding:2px 8px;color:#fff;">Seni & Budaya</span>
+              <h5>Pentas Seni "Singaparna Berbudaya" Memukau Ratusan Penonton</h5>
+              <span class="date">📅 5 Maret 2025</span>
+            </div>
+          </a>
+
+          <a href="berita.html" class="news-small">
+            <div class="news-small-img">⚽</div>
+            <div class="news-small-body">
+              <span class="news-cat yellow" style="font-size:0.7rem;padding:2px 8px;color:#fff;">Olahraga</span>
+              <h5>Tim Futsal Juara 1 Turnamen Pelajar Tingkat Kabupaten Tasikmalaya</h5>
+              <span class="date">📅 1 Maret 2025</span>
+            </div>
+          </a>
+
+          <a href="berita.html" class="news-small">
+            <div class="news-small-img">🌱</div>
+            <div class="news-small-body">
+              <span class="news-cat"
+                style="font-size:0.7rem;padding:2px 8px;background:var(--accent);color:#fff;">Lingkungan</span>
+              <h5>SMAN 1 Singaparna Sabet Penghargaan Sekolah Adiwiyata Mandiri</h5>
+              <span class="date">📅 20 Februari 2025</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:40px;">
+        <a href="berita.html" class="view-all-btn fade-in-up">Lihat Semua Berita →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ACTIVITIES =================== -->
+  <section class="activities-section section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up">
+        <span class="section-tag">Ekstrakurikuler</span>
+        <h2 class="section-title">Kegiatan <span class="gradient-text">Siswa Kami</span></h2>
+        <p class="section-subtitle">Berbagai program kegiatan yang dirancang untuk mengembangkan bakat, minat, dan
+          karakter siswa.</p>
+      </div>
+
+      <div class="activities-grid">
+        <div class="activity-card fade-in-up stagger-1">
+          <div class="activity-img">🔬</div>
+          <div class="activity-body">
+            <span class="activity-tag">Sains</span>
+            <h4>Kelompok Ilmiah Remaja (KIR)</h4>
+            <p>Wadah riset dan penelitian siswa dengan bimbingan guru-guru kompeten. Sering juara olimpiade sains.</p>
           </div>
-          <div class="contact-card fade-in-up stagger-3">
-            <div class="contact-card-icon">✉️</div>
-            <div>
-              <h4>Email Resmi</h4>
-              <p>info@sman1singaparna.sch.id</p>
-            </div>
+        </div>
+
+        <div class="activity-card fade-in-up stagger-2">
+          <div class="activity-img">⚽</div>
+          <div class="activity-body">
+            <span class="activity-tag">Olahraga</span>
+            <h4>Olahraga & Atletik</h4>
+            <p>Fasilitas lapangan lengkap untuk sepak bola, basket, voli, badminton, dan atletik berprestasi.</p>
           </div>
-          <div class="contact-card fade-in-up stagger-4">
-            <div class="contact-card-icon">🕒</div>
-            <div>
-              <h4>Jam Operasional</h4>
-              <p>Senin – Jumat: 07.00 – 16.00 WIB<br/>Sabtu: 07.00 – 12.00 WIB</p>
-            </div>
+        </div>
+
+        <div class="activity-card fade-in-up stagger-3">
+          <div class="activity-img">🎭</div>
+          <div class="activity-body">
+            <span class="activity-tag">Seni</span>
+            <h4>Seni, Drama & Musik</h4>
+            <p>Mengembangkan bakat seni melalui teater, paduan suara, seni rupa, dan band sekolah.</p>
+          </div>
+        </div>
+
+        <div class="activity-card fade-in-up stagger-1">
+          <div class="activity-img">🪖</div>
+          <div class="activity-body">
+            <span class="activity-tag">Kedisiplinan</span>
+            <h4>Pramuka & PASKIBRA</h4>
+            <p>Membentuk karakter disiplin, kepemimpinan, dan rasa cinta tanah air melalui kegiatan lapangan.</p>
+          </div>
+        </div>
+
+        <div class="activity-card fade-in-up stagger-2">
+          <div class="activity-img">💻</div>
+          <div class="activity-body">
+            <span class="activity-tag">Teknologi</span>
+            <h4>Robotik & Coding</h4>
+            <p>Program coding, robotik, dan desain grafis untuk mempersiapkan siswa di era digital.</p>
+          </div>
+        </div>
+
+        <div class="activity-card fade-in-up stagger-3">
+          <div class="activity-img">🕌</div>
+          <div class="activity-body">
+            <span class="activity-tag">Rohani</span>
+            <h4>Rohis & Kegiatan Agama</h4>
+            <p>Menanamkan nilai spiritual, toleransi, dan akhlakul karimah melalui kajian dan kegiatan islami.</p>
           </div>
         </div>
       </div>
 
-      <div class="contact-form fade-in-up stagger-2">
-        <h3>✉️ Kirim Pesan</h3>
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="nama">Nama Lengkap</label>
-            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="contoh@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="subjek">Kategori</label>
-            <select id="subjek" name="subjek">
-              <option value="">Pilih kategori...</option>
-              <option>Informasi PPDB</option>
-              <option>Informasi Akademik</option>
-              <option>Kegiatan Sekolah</option>
-              <option>Laporan / Saran</option>
-              <option>Lainnya</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="pesan">Pesan</label>
-            <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">
-            📤 Kirim Pesan
-          </button>
-        </form>
+      <div class="text-center" style="margin-top:40px;">
+        <a href="kegiatan.html" class="view-all-btn fade-in-up">Lihat Semua Kegiatan →</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- =================== FOOTER =================== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand-name">🏫 SMA Negeri 1 Singaparna</div>
-        <div class="brand-sub">Kabupaten Tasikmalaya, Jawa Barat</div>
-        <p>Mewujudkan generasi cerdas, berakhlak mulia, berprestasi, dan berdaya saing di era global berlandaskan iman dan takwa.</p>
-        <div class="social-links">
-          <a href="#" class="social-link" title="Instagram">📷</a>
-          <a href="#" class="social-link" title="Facebook">📘</a>
-          <a href="#" class="social-link" title="YouTube">▶️</a>
-          <a href="#" class="social-link" title="Twitter">🐦</a>
+  <!-- =================== CONTACT PREVIEW =================== -->
+  <section class="contact-section section-padding">
+    <div class="container">
+      <div class="text-center fade-in-up" style="margin-bottom:48px;">
+        <span class="section-tag">Hubungi Kami</span>
+        <h2 class="section-title">Ada Pertanyaan? <span class="gradient-text">Kami Siap Membantu</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info">
+            <div class="contact-card fade-in-up stagger-1">
+              <div class="contact-card-icon">📍</div>
+              <div>
+                <h4>Alamat Sekolah</h4>
+                <p>Jl. Perintis Kemerdekaan No. 1, Singaparna, Kab. Tasikmalaya, Jawa Barat 46416</p>
+              </div>
+            </div>
+            <div class="contact-card fade-in-up stagger-2">
+              <div class="contact-card-icon">📞</div>
+              <div>
+                <h4>Telepon / Fax</h4>
+                <p>(0265) 546001</p>
+              </div>
+            </div>
+            <div class="contact-card fade-in-up stagger-3">
+              <div class="contact-card-icon">✉️</div>
+              <div>
+                <h4>Email Resmi</h4>
+                <p>info@sman1singaparna.sch.id</p>
+              </div>
+            </div>
+            <div class="contact-card fade-in-up stagger-4">
+              <div class="contact-card-icon">🕒</div>
+              <div>
+                <h4>Jam Operasional</h4>
+                <p>Senin – Jumat: 07.00 – 16.00 WIB<br />Sabtu: 07.00 – 12.00 WIB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form fade-in-up stagger-2">
+          <h3>✉️ Kirim Pesan</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="contoh@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subjek">Kategori</label>
+              <select id="subjek" name="subjek">
+                <option value="">Pilih kategori...</option>
+                <option>Informasi PPDB</option>
+                <option>Informasi Akademik</option>
+                <option>Kegiatan Sekolah</option>
+                <option>Laporan / Saran</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              📤 Kirim Pesan
+            </button>
+          </form>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-col">
-        <h5>Navigasi</h5>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="profil.html">Profil Sekolah</a></li>
-          <li><a href="visi-misi.html">Visi & Misi</a></li>
-          <li><a href="guru.html">Daftar Guru</a></li>
-          <li><a href="berita.html">Berita</a></li>
-          <li><a href="kegiatan.html">Kegiatan</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-      </div>
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">🏫 SMA Negeri 1 Singaparna</div>
+          <div class="brand-sub">Kabupaten Tasikmalaya, Jawa Barat</div>
+          <p>Mewujudkan generasi cerdas, berakhlak mulia, berprestasi, dan berdaya saing di era global berlandaskan iman
+            dan takwa.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Instagram">📷</a>
+            <a href="#" class="social-link" title="Facebook">📘</a>
+            <a href="#" class="social-link" title="YouTube">▶️</a>
+            <a href="#" class="social-link" title="Twitter">🐦</a>
+          </div>
+        </div>
 
-      <div class="footer-col">
-        <h5>Informasi</h5>
-        <ul>
-          <li><a href="#">PPDB Online</a></li>
-          <li><a href="#">Kalender Akademik</a></li>
-          <li><a href="#">Jadwal Pelajaran</a></li>
-          <li><a href="#">Prestasi Sekolah</a></li>
-          <li><a href="#">Fasilitas</a></li>
-          <li><a href="#">Ekstrakurikuler</a></li>
-        </ul>
-      </div>
+        <div class="footer-col">
+          <h5>Navigasi</h5>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Sekolah</a></li>
+            <li><a href="visi-misi.html">Visi & Misi</a></li>
+            <li><a href="guru.html">Daftar Guru</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
 
-      <div class="footer-col">
-        <h5>Kontak</h5>
-        <ul>
-          <li><a href="#">📍 Singaparna, Tasikmalaya</a></li>
-          <li><a href="#">📞 (0265) 546001</a></li>
-          <li><a href="#">✉️ info@sman1singaparna.sch.id</a></li>
-          <li><a href="#">🕒 Senin–Jumat 07.00–16.00</a></li>
-        </ul>
+        <div class="footer-col">
+          <h5>Informasi</h5>
+          <ul>
+            <li><a href="#">PPDB Online</a></li>
+            <li><a href="#">Kalender Akademik</a></li>
+            <li><a href="#">Jadwal Pelajaran</a></li>
+            <li><a href="#">Prestasi Sekolah</a></li>
+            <li><a href="#">Fasilitas</a></li>
+            <li><a href="#">Ekstrakurikuler</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Kontak</h5>
+          <ul>
+            <li><a href="#">📍 Singaparna, Tasikmalaya</a></li>
+            <li><a href="#">📞 (0265) 546001</a></li>
+            <li><a href="#">✉️ info@sman1singaparna.sch.id</a></li>
+            <li><a href="#">🕒 Senin–Jumat 07.00–16.00</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 SMA Negeri 1 Singaparna. Hak cipta dilindungi. | Dikembangkan dengan ❤️ untuk kemajuan pendidikan.</p>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>© 2025 SMA Negeri 1 Singaparna. Hak cipta dilindungi. | Dikembangkan dengan ❤️ untuk kemajuan pendidikan.</p>
+    </div>
+  </footer>
 
-<!-- Back to Top -->
-<button id="back-to-top" style="position:fixed;bottom:28px;right:28px;width:48px;height:48px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);cursor:pointer;border:none;z-index:999;opacity:0;pointer-events:none;transition:all 0.3s;" title="Kembali ke atas">
-  ↑
-</button>
+  <!-- Back to Top -->
+  <button id="back-to-top"
+    style="position:fixed;bottom:28px;right:28px;width:48px;height:48px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.3rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);cursor:pointer;border:none;z-index:999;opacity:0;pointer-events:none;transition:all 0.3s;"
+    title="Kembali ke atas">
+    ↑
+  </button>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
+
 </html>
